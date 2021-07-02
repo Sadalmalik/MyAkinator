@@ -81,7 +81,7 @@ class Game:
 
     def TryAskGuess(self):
         sub = self.__subjects[0]
-        if sub.prob > .8:
+        if sub.prob > .6:
             print('Is it \'{}\'? Y/N'.format(sub.Name))
             answer = input(':> ')
             return answer == 'Y', sub
